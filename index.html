@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body onload="onInit()">
+    <h1>Mine Sweeper</h1>
+    <div class="game-container">
+      <div class="header">
+        <button onclick="onChooseLevl(this)" class="header-btn">Easy</button>
+        <button onclick="onChooseLevl(this)" class="header-btn">Medium</button>
+        <button onclick="onChooseLevl(this)" class="header-btn">Hard</button>
+
+        <button class="header-btn">
+          🚩<span class="flag"></span> ⏱️<span class="timer"></span>
+        </button>
+      </div>
+
+      <table>
+        <tbody class="board"></tbody>
+      </table>
+      <button onclick="newGame()" class="newGame-btn">New game</button>
+
+      <div class="modal">
+        <h3 class="msg"></h3>
+        <button class="restart-btn" onclick="onInit()">Play Again</button>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/second.js"></script>
+    <script src="js/util.js"></script>
+  </body>
+</html>
